@@ -1,0 +1,769 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Aug 25 14:35:41 2018
+# Process ID: 1572
+# Log file: H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/synth_1/ov7670_vga.vds
+# Journal file: H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ov7670_vga.tcl -notrace
+Command: synth_design -top ov7670_vga -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+WARNING: [Synth 8-2611] redeclaration of ansi port x_cnt is not allowed [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/VGA.v:89]
+WARNING: [Synth 8-976] x_cnt has already been declared [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/VGA.v:89]
+WARNING: [Synth 8-2654] second declaration of x_cnt ignored [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/VGA.v:89]
+INFO: [Synth 8-994] x_cnt is declared here [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/VGA.v:32]
+WARNING: [Synth 8-2611] redeclaration of ansi port y_cnt is not allowed [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/VGA.v:90]
+WARNING: [Synth 8-976] y_cnt has already been declared [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/VGA.v:90]
+WARNING: [Synth 8-2654] second declaration of y_cnt ignored [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/VGA.v:90]
+INFO: [Synth 8-994] y_cnt is declared here [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/VGA.v:33]
+WARNING: [Synth 8-2611] redeclaration of ansi port addra is not allowed [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/DATA_processing.v:53]
+WARNING: [Synth 8-2611] redeclaration of ansi port addrb is not allowed [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/DATA_processing.v:56]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 274.711 ; gain = 97.652
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ov7670_vga' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:5]
+	Parameter Initial_count_motor1 bound to: 50000000 - type: integer 
+	Parameter Initial_count_motor2 bound to: 100000000 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'clk_wiz_0' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/synth_1/.Xil/Vivado-1572-DESKTOP-AI64EI3/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'clk_wiz_0' (1#1) [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/synth_1/.Xil/Vivado-1572-DESKTOP-AI64EI3/realtime/clk_wiz_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'cfg_ov7670' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/cfg_ov7670.v:23]
+	Parameter par_camera_address bound to: 8'b01000010 
+WARNING: [Synth 8-2898] ignoring pullup [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/cfg_ov7670.v:38]
+INFO: [Synth 8-638] synthesizing module 'cfg_reg' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/cfg_reg.v:23]
+	Parameter LEN bound to: 122 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'cfg_reg' (2#1) [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/cfg_reg.v:23]
+INFO: [Synth 8-638] synthesizing module 'SCCB_sender' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/SCCB_sender.v:51]
+INFO: [Synth 8-155] case statement is not full and has no default [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/SCCB_sender.v:180]
+INFO: [Synth 8-256] done synthesizing module 'SCCB_sender' (3#1) [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/SCCB_sender.v:51]
+WARNING: [Synth 8-3848] Net srt in module/entity cfg_ov7670 does not have driver. [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/cfg_ov7670.v:72]
+INFO: [Synth 8-256] done synthesizing module 'cfg_ov7670' (4#1) [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/cfg_ov7670.v:23]
+INFO: [Synth 8-638] synthesizing module 'DATA_processing' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/DATA_processing.v:23]
+	Parameter Hde_start bound to: 144 - type: integer 
+	Parameter Vde_start bound to: 35 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'blk_mem_gen_0' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/synth_1/.Xil/Vivado-1572-DESKTOP-AI64EI3/realtime/blk_mem_gen_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'blk_mem_gen_0' (5#1) [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/synth_1/.Xil/Vivado-1572-DESKTOP-AI64EI3/realtime/blk_mem_gen_0_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'DATA_processing' (6#1) [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/DATA_processing.v:23]
+INFO: [Synth 8-638] synthesizing module 'VGA' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/VGA.v:23]
+	Parameter LinePeriod bound to: 800 - type: integer 
+	Parameter H_SyncPulse bound to: 96 - type: integer 
+	Parameter H_BackPorch bound to: 48 - type: integer 
+	Parameter H_ActivePix bound to: 640 - type: integer 
+	Parameter H_FrontPorch bound to: 16 - type: integer 
+	Parameter Hde_start bound to: 144 - type: integer 
+	Parameter Hde_end bound to: 784 - type: integer 
+	Parameter FramePeriod bound to: 525 - type: integer 
+	Parameter V_SyncPulse bound to: 2 - type: integer 
+	Parameter V_BackPorch bound to: 33 - type: integer 
+	Parameter V_ActivePix bound to: 480 - type: integer 
+	Parameter V_FrontPorch bound to: 10 - type: integer 
+	Parameter Vde_start bound to: 35 - type: integer 
+	Parameter Vde_end bound to: 515 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'VGA' (7#1) [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/VGA.v:23]
+INFO: [Synth 8-638] synthesizing module 'Coordinate_calculate' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Coordinate_calculate.v:23]
+	Parameter X_num bound to: 640 - type: integer 
+	Parameter Y_num bound to: 480 - type: integer 
+	Parameter Target_min_judge_green bound to: 80 - type: integer 
+	Parameter Target_min_judge_yellow bound to: 7 - type: integer 
+	Parameter Area_edge_X bound to: 100 - type: integer 
+	Parameter Area_edge_Y bound to: 80 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'DIV_32_32' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/synth_1/.Xil/Vivado-1572-DESKTOP-AI64EI3/realtime/DIV_32_32_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'DIV_32_32' (8#1) [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/synth_1/.Xil/Vivado-1572-DESKTOP-AI64EI3/realtime/DIV_32_32_stub.v:7]
+INFO: [Synth 8-256] done synthesizing module 'Coordinate_calculate' (9#1) [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Coordinate_calculate.v:23]
+INFO: [Synth 8-638] synthesizing module 'Moter_X' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_X.v:24]
+	Parameter angle_min_num bound to: 50000 - type: integer 
+	Parameter angle_mid_num bound to: 150000 - type: integer 
+	Parameter angle_max_num bound to: 250000 - type: integer 
+	Parameter angle_period_num bound to: 300000 - type: integer 
+	Parameter clk_PWM_num_half bound to: 500000 - type: integer 
+	Parameter clk_PWM_num bound to: 1000000 - type: integer 
+	Parameter Error_rank_1 bound to: 85937 - type: integer 
+	Parameter Error_rank_2 bound to: 25000 - type: integer 
+	Parameter Error_rank_3 bound to: 12500 - type: integer 
+	Parameter P_ratio_1 bound to: 8 - type: integer 
+	Parameter P_ratio_2 bound to: 8 - type: integer 
+	Parameter P_ratio_3 bound to: 9 - type: integer 
+	Parameter P_ratio_4 bound to: 10 - type: integer 
+	Parameter X_error_threshold bound to: 9375 - type: integer 
+INFO: [Synth 8-4471] merging register 'Sub_P_parameter_reg[4:0]' into 'Add_P_parameter_reg[4:0]' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_X.v:67]
+INFO: [Synth 8-256] done synthesizing module 'Moter_X' (10#1) [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_X.v:24]
+INFO: [Synth 8-638] synthesizing module 'Motor_Y' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_Y.v:24]
+	Parameter angle_min_num bound to: 50000 - type: integer 
+	Parameter angle_mid_num bound to: 150000 - type: integer 
+	Parameter angle_max_num bound to: 250000 - type: integer 
+	Parameter angle_period_num bound to: 300000 - type: integer 
+	Parameter clk_PWM_num_half bound to: 500000 - type: integer 
+	Parameter clk_PWM_num bound to: 1000000 - type: integer 
+	Parameter Error_rank_1 bound to: 85937 - type: integer 
+	Parameter Error_rank_2 bound to: 25000 - type: integer 
+	Parameter Error_rank_3 bound to: 12500 - type: integer 
+	Parameter P_ratio_1 bound to: 8 - type: integer 
+	Parameter P_ratio_2 bound to: 8 - type: integer 
+	Parameter P_ratio_3 bound to: 9 - type: integer 
+	Parameter P_ratio_4 bound to: 10 - type: integer 
+	Parameter Y_error_threshold bound to: 9375 - type: integer 
+INFO: [Synth 8-4471] merging register 'Sub_P_parameter_reg[4:0]' into 'Add_P_parameter_reg[4:0]' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_Y.v:67]
+INFO: [Synth 8-256] done synthesizing module 'Motor_Y' (11#1) [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_Y.v:24]
+INFO: [Synth 8-638] synthesizing module 'Motor_position_detect' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Motor_position_detect.v:23]
+	Parameter X_size_mul bound to: 2 - type: integer 
+	Parameter X_size_div bound to: 2 - type: integer 
+	Parameter Y_size_mul bound to: 6 - type: integer 
+	Parameter Y_size_div bound to: 2 - type: integer 
+	Parameter X_pixel bound to: 640 - type: integer 
+	Parameter Y_pixel bound to: 480 - type: integer 
+	Parameter Div_motor bound to: 200000 - type: integer 
+	Parameter Rdge_X_left bound to: 50000 - type: integer 
+	Parameter Rdge_Y_up bound to: 50000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Motor_position_detect' (12#1) [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Motor_position_detect.v:23]
+WARNING: [Synth 8-567] referenced signal 'ledmode' should be on the sensitivity list [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:92]
+WARNING: [Synth 8-567] referenced signal 'X_coordinate_w' should be on the sensitivity list [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:92]
+WARNING: [Synth 8-567] referenced signal 'Y_coordinate_w' should be on the sensitivity list [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:92]
+WARNING: [Synth 8-3848] Net pixel_data in module/entity ov7670_vga does not have driver. [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:65]
+INFO: [Synth 8-256] done synthesizing module 'ov7670_vga' (13#1) [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:5]
+WARNING: [Synth 8-3917] design ov7670_vga has port camera_pwdn driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_vga has port camera_rst driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 298.688 ; gain = 121.629
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin I_SCCB_sender:rst to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/cfg_ov7670.v:70]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[15] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[14] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[13] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[12] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[11] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[10] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[9] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[8] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[7] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[6] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[5] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[4] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[3] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[2] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[1] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+WARNING: [Synth 8-3295] tying undriven pin DATA_processing:data[0] to constant 0 [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/ov7670_vga.v:143]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 298.688 ; gain = 121.629
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/synth_1/.Xil/Vivado-1572-DESKTOP-AI64EI3/dcp/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0'
+Finished Parsing XDC File [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/synth_1/.Xil/Vivado-1572-DESKTOP-AI64EI3/dcp/clk_wiz_0_in_context.xdc] for cell 'clk_wiz_0'
+Parsing XDC File [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/constrs_1/new/ov7670_1.xdc]
+WARNING: [Vivado 12-507] No nets matched 'camera_pclk_IBUF'. [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/constrs_1/new/ov7670_1.xdc:22]
+Finished Parsing XDC File [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/constrs_1/new/ov7670_1.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/constrs_1/new/ov7670_1.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ov7670_vga_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 605.699 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 605.699 ; gain = 428.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 605.699 ; gain = 428.641
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for clk100M. (constraint file  H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/synth_1/.Xil/Vivado-1572-DESKTOP-AI64EI3/dcp/clk_wiz_0_in_context.xdc, line 6).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 605.699 ; gain = 428.641
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "SIOD_EN" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "error" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "VS_count" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "hsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vga_dis_mode" won't be mapped to RAM because it is too sparse
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5544] ROM "HS_flag" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "VS_flag_change" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Judge_threshold" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "Waiting_flag" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5545] ROM "X_coordinate0" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "Y_coordinate0" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_X.v:63]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_X.v:109]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_X.v:111]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_X.v:111]
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_X.v:111]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_Y.v:63]
+INFO: [Synth 8-3537] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the inputs of the operator [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_Y.v:109]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 605.699 ; gain = 428.641
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 21    
+	   3 Input     32 Bit       Adders := 2     
+	   2 Input     21 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 3     
+	   2 Input     10 Bit       Adders := 4     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               32 Bit    Registers := 24    
+	               21 Bit    Registers := 1     
+	               16 Bit    Registers := 4     
+	               11 Bit    Registers := 3     
+	               10 Bit    Registers := 4     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 27    
++---Multipliers : 
+	                 2x32  Multipliers := 4     
+	                 5x28  Multipliers := 1     
+	                 6x27  Multipliers := 1     
++---ROMs : 
+	                              ROMs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 14    
+	   3 Input     32 Bit        Muxes := 8     
+	   9 Input     16 Bit        Muxes := 1     
+	   5 Input     10 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   7 Input      5 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 4     
+	   9 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 3     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 13    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ov7670_vga 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 4     
+Module cfg_reg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module SCCB_sender 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     21 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	               21 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 4     
+	   3 Input      1 Bit        Muxes := 1     
+Module DATA_processing 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 3     
+	               10 Bit    Registers := 3     
+	                9 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   5 Input     10 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   4 Input      1 Bit        Muxes := 1     
+Module VGA 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               11 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   9 Input     16 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   7 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   7 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   9 Input      4 Bit        Muxes := 1     
+	  14 Input      3 Bit        Muxes := 3     
+Module Coordinate_calculate 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 12    
++---Registers : 
+	               32 Bit    Registers := 15    
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 8     
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 1     
+Module Moter_X 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	                 2x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Motor_Y 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Multipliers : 
+	                 2x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 3     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module Motor_position_detect 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Multipliers : 
+	                 5x28  Multipliers := 1     
+	                 6x27  Multipliers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 120 (col length:60)
+BRAMs: 150 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 605.699 ; gain = 428.641
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'Camera_data_out_reg[15:0]' into 'Camera_data_out_reg[15:0]' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/DATA_processing.v:142]
+INFO: [Synth 8-4471] merging register 'Camera_data_out_reg[15:0]' into 'Camera_data_out_reg[15:0]' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/DATA_processing.v:142]
+INFO: [Synth 8-4471] merging register 'Camera_data_out_reg[15:0]' into 'Camera_data_out_reg[15:0]' [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/DATA_processing.v:142]
+INFO: [Synth 8-5546] ROM "hsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "y_cnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_r" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vsync_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "hsync_de" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "vga_dis_mode" won't be mapped to RAM because it is too sparse
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "p_0_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "X_coordinate0" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "Y_coordinate0" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-41] '+' operator could not be merged with '+' operator due to loss of accuracy [H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.srcs/sources_1/new/Moter_X.v:111]
+DSP Report: Generating DSP X_OUT2, operation Mode is: (A:0x30d40)*B.
+DSP Report: operator X_OUT2 is absorbed into DSP X_OUT2.
+DSP Report: Generating DSP Y_OUT2, operation Mode is: (A:0x30d40)*B.
+DSP Report: operator Y_OUT2 is absorbed into DSP Y_OUT2.
+WARNING: [Synth 8-3917] design ov7670_vga has port camera_pwdn driven by constant 0
+WARNING: [Synth 8-3917] design ov7670_vga has port camera_rst driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 605.699 ; gain = 428.641
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 605.699 ; gain = 428.641
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+------------+---------------+----------------+
+|Module Name | RTL Object | Depth x Width | Implemented As | 
++------------+------------+---------------+----------------+
+|cfg_reg     | extrom     | 2048x16       | Block RAM      | 
+|cfg_ov7670  | extrom     | 2048x16       | Block RAM      | 
++------------+------------+---------------+----------------+
+
+
+DSP:
++----------------------+---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name           | DSP Mapping   | Neg Edge Clk | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------------+---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Motor_position_detect | (A:0x30d40)*B | No           | 18     | 10     | 48     | 25     | 28     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
+|Motor_position_detect | (A:0x30d40)*B | No           | 18     | 9      | 48     | 25     | 27     | 0    | 0    | 1    | 1    | 1     | 0    | 0    | 
++----------------------+---------------+--------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (I_CFG_OV7670/\I_SCCB_sender/dr_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Motor_Y/\Add_P_parameter_reg[4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Moter_X/\Add_P_parameter_reg[4] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (I_CFG_OV7670/\I_SCCB_sender/dr_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (\I_SCCB_sender/error_reg ) is unused and will be removed from module cfg_ov7670.
+WARNING: [Synth 8-3332] Sequential element (\I_SCCB_sender/dr_reg[1] ) is unused and will be removed from module cfg_ov7670.
+WARNING: [Synth 8-3332] Sequential element (\I_SCCB_sender/dr_reg[0] ) is unused and will be removed from module cfg_ov7670.
+WARNING: [Synth 8-3332] Sequential element (\B[0]__1 ) is unused and will be removed from module DATA_processing.
+WARNING: [Synth 8-3332] Sequential element (\B[1]__1 ) is unused and will be removed from module DATA_processing.
+WARNING: [Synth 8-3332] Sequential element (\B[2]__1 ) is unused and will be removed from module DATA_processing.
+WARNING: [Synth 8-3332] Sequential element (\B[3]__1 ) is unused and will be removed from module DATA_processing.
+WARNING: [Synth 8-3332] Sequential element (\B[4]__1 ) is unused and will be removed from module DATA_processing.
+WARNING: [Synth 8-3332] Sequential element (\vga_r_reg_reg[0] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\vga_g_reg_reg[1] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\vga_g_reg_reg[0] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\vga_b_reg_reg[0] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[14] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[13] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[12] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[11] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[10] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[9] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[8] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[7] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[6] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[5] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[4] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[3] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[2] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[1] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_1_reg[0] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[14] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[13] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[12] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[11] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[10] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[9] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[8] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[7] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[6] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[5] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[4] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[3] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[2] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[1] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\grid_data_2_reg[0] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\bar_data_reg[14] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\bar_data_reg[13] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\bar_data_reg[12] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\bar_data_reg[11] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\bar_data_reg[8] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\bar_data_reg[7] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\bar_data_reg[6] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\bar_data_reg[5] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\bar_data_reg[3] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\bar_data_reg[2] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\bar_data_reg[1] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\bar_data_reg[0] ) is unused and will be removed from module VGA.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[31] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[30] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[29] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[28] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[27] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[26] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[25] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[24] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[23] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[22] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[21] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[20] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[19] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[18] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[17] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[16] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[15] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[14] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[13] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[12] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[11] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_coordinate_reg[10] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[31] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[30] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[29] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[28] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[27] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[26] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[25] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[24] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[23] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[22] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[21] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[20] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[19] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[18] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[17] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[16] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[15] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[14] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[13] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[12] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[11] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\Y_coordinate_reg[10] ) is unused and will be removed from module Coordinate_calculate.
+WARNING: [Synth 8-3332] Sequential element (\X_error_reg[31] ) is unused and will be removed from module Moter_X.
+WARNING: [Synth 8-3332] Sequential element (\X_error_reg[30] ) is unused and will be removed from module Moter_X.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (Coordinate_calculate/\Edge_X_right_reg[31] )
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 605.699 ; gain = 428.641
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 605.699 ; gain = 428.641
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 605.699 ; gain = 428.641
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: Moved 4 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 633.086 ; gain = 456.027
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 635.121 ; gain = 458.063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance \I_CFG_OV7670/I_CFG_REG/dout_reg  (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 675.383 ; gain = 498.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 675.383 ; gain = 498.324
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 675.383 ; gain = 498.324
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 675.383 ; gain = 498.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 675.383 ; gain = 498.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:40 ; elapsed = 00:00:43 . Memory (MB): peak = 675.383 ; gain = 498.324
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Static Shift Register:
++------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|Module Name | RTL Name                              | Length | Width | Reset Signal | Pull out first Reg | Pull out last Reg | SRL16E | SRLC32E | 
++------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+|ov7670_vga  | I_CFG_OV7670/I_SCCB_sender/dr_reg[27] | 4      | 1     | YES          | NO                 | NO                | 1      | 0       | 
++------------+---------------------------------------+--------+-------+--------------+--------------------+-------------------+--------+---------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |clk_wiz_0     |         1|
+|2     |DIV_32_32     |         4|
+|3     |blk_mem_gen_0 |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |DIV_32_32     |     1|
+|2     |DIV_32_32__1  |     1|
+|3     |DIV_32_32__2  |     1|
+|4     |DIV_32_32__3  |     1|
+|5     |blk_mem_gen_0 |     1|
+|6     |clk_wiz_0     |     1|
+|7     |BUFG          |     4|
+|8     |CARRY4        |   307|
+|9     |DSP48E1       |     2|
+|10    |LUT1          |   670|
+|11    |LUT2          |   407|
+|12    |LUT3          |   190|
+|13    |LUT4          |   302|
+|14    |LUT5          |   157|
+|15    |LUT6          |   394|
+|16    |RAMB36E1      |     1|
+|17    |SRL16E        |     1|
+|18    |FDRE          |  1037|
+|19    |FDSE          |     9|
+|20    |IBUF          |    17|
+|21    |OBUF          |    36|
+|22    |OBUFT         |     1|
++------+--------------+------+
+
+Report Instance Areas: 
++------+--------------------------+----------------------+------+
+|      |Instance                  |Module                |Cells |
++------+--------------------------+----------------------+------+
+|1     |top                       |                      |  3815|
+|2     |  Coordinate_calculate    |Coordinate_calculate  |  1370|
+|3     |  DATA_processing         |DATA_processing       |   334|
+|4     |  I_CFG_OV7670            |cfg_ov7670            |   161|
+|5     |    I_CFG_REG             |cfg_reg               |    40|
+|6     |    I_SCCB_sender         |SCCB_sender           |   121|
+|7     |  Moter_X                 |Moter_X               |   740|
+|8     |  Motor_Y                 |Motor_Y               |   459|
+|9     |  Motor_position_detect_1 |Motor_position_detect |   207|
+|10    |  VGA                     |VGA                   |   209|
++------+--------------------------+----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 675.383 ; gain = 498.324
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 173 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 675.383 ; gain = 146.234
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 675.383 ; gain = 498.324
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 327 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 1 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 18 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+94 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 675.383 ; gain = 457.770
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.076 . Memory (MB): peak = 675.383 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 25 14:36:26 2018...

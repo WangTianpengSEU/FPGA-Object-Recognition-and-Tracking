@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Aug 06 22:03:43 2018
+# Process ID: 3128
+# Log file: H:/UserFiles/Desktop/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/DIV_32_32_synth_1/DIV_32_32.vds
+# Journal file: H:/UserFiles/Desktop/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/DIV_32_32_synth_1\vivado.jou
+#-----------------------------------------------------------
+source DIV_32_32.tcl -notrace

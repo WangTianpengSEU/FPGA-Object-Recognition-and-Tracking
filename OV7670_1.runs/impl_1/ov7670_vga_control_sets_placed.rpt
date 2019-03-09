@@ -1,0 +1,96 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Sat Aug 25 14:37:38 2018
+| Host         : DESKTOP-AI64EI3 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ov7670_vga_control_sets_placed.rpt
+| Design       : ov7670_vga
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |    43 |
+| Minimum Number of register sites lost to control set restrictions |   120 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |           12544 |         2364 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             324 |          103 |
+| Yes          | No                    | No                     |             232 |           69 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             372 |           99 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------------------+------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|       Clock Signal       |                     Enable Signal                    |                   Set/Reset Signal                   | Slice Load Count | Bel Load Count |
++--------------------------+------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+|  clk_wiz_0/inst/clk_out2 | VGA/vga_dis_mode[3]_i_1_n_0                          |                                                      |                3 |              4 |
+| ~clk_wiz_0/inst/clk_out2 | VGA/bar_data[15]_i_1_n_0                             |                                                      |                2 |              4 |
+|  clk_wiz_0/inst/clk_out3 | Coordinate_calculate/DATA_processing/flag_hs         |                                                      |                3 |              5 |
+|  clk_wiz_0/inst/clk_out3 | DATA_processing/VS_count0                            | DATA_processing/VS_count0_in[2]                      |                3 |              7 |
+|  clk_wiz_0/inst/clk_out3 | Coordinate_calculate/DATA_processing/flag_hs         | Coordinate_calculate/Edge_X_right[6]_i_1_n_0         |                2 |              7 |
+|  clk_wiz_0/inst/clk_out2 | VGA/addrb_y_reg[0][0]                                | VGA/addrb_y_reg[8][0]                                |                2 |              9 |
+|  clk_wiz_0/inst/clk_out3 | Coordinate_calculate/DATA_processing/flag_hs         | Coordinate_calculate/Edge_Y_down[4]_i_1_n_0          |                3 |              9 |
+|  clk_wiz_0/inst/clk_out3 | DATA_processing/addra_y[8]_i_2_n_0                   | DATA_processing/VS_count0_in[1]                      |                2 |              9 |
+|  clk_wiz_0/inst/clk_out2 | VGA/E[0]                                             | VGA/SR[0]                                            |                3 |             10 |
+|  clk_wiz_0/inst/clk_out3 | Coordinate_calculate/Y_coordinate[9]_i_1_n_0         |                                                      |                3 |             10 |
+|  clk_wiz_0/inst/clk_out2 | VGA/y_cnt[9]_i_1_n_0                                 |                                                      |                4 |             10 |
+|  clk_wiz_0/inst/clk_out3 | Coordinate_calculate/X_coordinate[9]_i_1_n_0         |                                                      |                3 |             10 |
+|  clk_wiz_0/inst/clk_out3 | DATA_processing/addra_x[9]_i_2_n_0                   | DATA_processing/addra_x[9]_i_1_n_0                   |                2 |             10 |
+|  clk_wiz_0/inst/clk_out2 | I_CFG_OV7670/I_SCCB_sender/dr[20]_i_1_n_0            | I_CFG_OV7670/I_SCCB_sender/dr[30]_i_1_n_0            |                5 |             10 |
+|  clk_wiz_0/inst/clk_out3 |                                                      |                                                      |                5 |             10 |
+| ~clk_wiz_0/inst/clk_out2 |                                                      |                                                      |                7 |             14 |
+|  camera_pclk_IBUF_BUFG   |                                                      | DATA_processing/data_mark0                           |                6 |             15 |
+|  clk_wiz_0/inst/clk_out2 | VGA/sel                                              | VGA/clear                                            |                4 |             16 |
+|  camera_pclk_IBUF_BUFG   |                                                      |                                                      |               10 |             17 |
+|  clk_wiz_0/inst/clk_out2 | I_CFG_OV7670/I_SCCB_sender/dr[20]_i_1_n_0            |                                                      |                8 |             19 |
+|  clk_wiz_0/inst/clk_out2 |                                                      | I_CFG_OV7670/I_SCCB_sender/cntr[20]_i_1_n_0          |                5 |             20 |
+|  camera_pclk_IBUF_BUFG   | DATA_processing/Camera_flag                          |                                                      |                8 |             21 |
+|  clk_wiz_0/inst/clk_out2 | I_CFG_OV7670/I_SCCB_sender/cntr_reg[10]_0            |                                                      |                7 |             22 |
+|  clk_wiz_0/inst/clk_out3 | Coordinate_calculate/DATA_processing/flag_hs         | Coordinate_calculate/Edge_X_left[31]_i_1_n_0         |                8 |             31 |
+|  clk_wiz_0/inst/clk_out3 | Coordinate_calculate/Target_count[31]_i_1_n_0        |                                                      |                5 |             32 |
+|  clk_wiz_0/inst/clk_out3 | Coordinate_calculate/DATA_processing/flag_hs         | Coordinate_calculate/Edge_Y_up[31]_i_1_n_0           |                8 |             32 |
+|  clk_wiz_0/inst/clk_out3 | Coordinate_calculate/Y_count[31]_i_1_n_0             | camera_vsync_IBUF                                    |                9 |             32 |
+|  clk100M_BUFG            |                                                      | Moter_X/PWM_count[0]_i_1_n_0                         |                8 |             32 |
+|  clk100M_BUFG            |                                                      | Moter_X/clk_PWM_count[0]_i_1_n_0                     |                8 |             32 |
+|  clk100M_BUFG            |                                                      | Motor_Y/PWM_count[0]_i_1__0_n_0                      |                8 |             32 |
+|  clk100M_BUFG            |                                                      | Motor_Y/clk_PWM_count[0]_i_1__0_n_0                  |                8 |             32 |
+|  clk100M_BUFG            |                                                      | Motor_position_detect_1/Add_speed_K_reg[0]_2         |               12 |             32 |
+|  clk100M_BUFG            |                                                      | Motor_position_detect_1/Add_speed_K_reg[31]          |               15 |             32 |
+|  clk100M_BUFG            |                                                      | Motor_position_detect_1/SR[0]                        |               13 |             32 |
+|  clk100M_BUFG            |                                                      | Motor_position_detect_1/Sub_speed_K_reg[0][0]        |               11 |             32 |
+|  clk100M_BUFG            | Initial_count[0]_i_1_n_0                             |                                                      |                8 |             32 |
+|  clk_PWM                 | Moter_X/angle_count[31]_i_1_n_0                      |                                                      |                8 |             32 |
+|  clk_PWM_0               | Motor_Y/angle_count[31]_i_1__0_n_0                   |                                                      |                8 |             32 |
+|  clk_wiz_0/inst/clk_out3 |                                                      | Coordinate_calculate/X_count[31]_i_1_n_0             |                9 |             33 |
+|  clk_wiz_0/inst/clk_out2 |                                                      |                                                      |               21 |             35 |
+|  clk_wiz_0/inst/clk_out3 | Coordinate_calculate/Target_num[31]_i_1_n_0          | camera_vsync_IBUF                                    |               24 |             95 |
+|  clk_wiz_0/inst/clk_out3 | Coordinate_calculate/Target_num_estimate[31]_i_2_n_0 | Coordinate_calculate/Target_num_estimate[31]_i_1_n_0 |               24 |             95 |
+|  clk100M_BUFG            |                                                      |                                                      |             2321 |          12468 |
++--------------------------+------------------------------------------------------+------------------------------------------------------+------------------+----------------+
+
+

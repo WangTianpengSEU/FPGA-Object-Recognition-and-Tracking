@@ -1,0 +1,1166 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------
+| Tool Version     : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date             : Sat Aug 25 14:38:27 2018
+| Host             : DESKTOP-AI64EI3 running 64-bit major release  (build 9200)
+| Command          : report_power -file ov7670_vga_power_routed.rpt -pb ov7670_vga_power_summary_routed.pb
+| Design           : ov7670_vga
+| Device           : xc7a35tcpg236-1
+| Design State     : Routed
+| Grade            : commercial
+| Process          : typical
+| Characterization : Production
+-------------------------------------------------------------------------------------------------------------------
+
+Power Report
+
+Table of Contents
+-----------------
+1. Summary
+1.1 On-Chip Components
+1.2 Power Supply Summary
+1.3 Confidence Level
+2. Settings
+2.1 Environment
+2.2 Clock Constraints
+3. Detailed Reports
+3.1 By Hierarchy
+
+1. Summary
+----------
+
++--------------------------+-------+
+| Total On-Chip Power (W)  | 0.246 |
+| Dynamic (W)              | 0.172 |
+| Device Static (W)        | 0.074 |
+| Effective TJA (C/W)      | 5.0   |
+| Max Ambient (C)          | 83.8  |
+| Junction Temperature (C) | 26.2  |
+| Confidence Level         | Low   |
+| Setting File             | ---   |
+| Simulation Activity File | ---   |
+| Design Nets Matched      | NA    |
++--------------------------+-------+
+
+
+1.1 On-Chip Components
+----------------------
+
++-------------------------+-----------+----------+-----------+-----------------+
+| On-Chip                 | Power (W) | Used     | Available | Utilization (%) |
++-------------------------+-----------+----------+-----------+-----------------+
+| Clocks                  |     0.002 |        8 |       --- |             --- |
+| Slice Logic             |     0.056 |    23495 |       --- |             --- |
+|   LUT as Logic          |     0.041 |     5983 |     20800 |           28.76 |
+|   CARRY4                |     0.009 |     1459 |      8150 |           17.90 |
+|   Register              |     0.007 |    13472 |     41600 |           32.38 |
+|   BUFG                  |    <0.001 |        4 |        32 |           12.50 |
+|   F7/F8 Muxes           |    <0.001 |       21 |     32600 |            0.06 |
+|   Others                |     0.000 |     2285 |       --- |             --- |
+|   LUT as Shift Register |     0.000 |        1 |      9600 |            0.01 |
+| Signals                 |     0.048 |    16181 |       --- |             --- |
+| Block RAM               |     0.004 |       42 |        50 |           84.00 |
+| MMCM                    |     0.056 |        1 |         5 |           20.00 |
+| DSPs                    |     0.000 |        2 |        90 |            2.22 |
+| I/O                     |     0.007 |       55 |       106 |           51.89 |
+| Static Power            |     0.074 |          |           |                 |
+| Total                   |     0.246 |          |           |                 |
++-------------------------+-----------+----------+-----------+-----------------+
+
+
+1.2 Power Supply Summary
+------------------------
+
++-----------+-------------+-----------+-------------+------------+
+| Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
++-----------+-------------+-----------+-------------+------------+
+| Vccint    |       1.000 |     0.120 |       0.109 |      0.011 |
+| Vccaux    |       1.800 |     0.044 |       0.031 |      0.013 |
+| Vcco33    |       3.300 |     0.003 |       0.002 |      0.001 |
+| Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
+| Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
+| Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
+| Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
+| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
+| MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
+| MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
+| Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
++-----------+-------------+-----------+-------------+------------+
+
+
+1.3 Confidence Level
+--------------------
+
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| User Input Data             | Confidence | Details                                                | Action                                                                                                             |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+| Design implementation state | High       | Design is routed                                       |                                                                                                                    |
+| Clock nodes activity        | Low        | User specified less than 75% of clocks                 | Provide missing clock activity with a constraint file, simulation results or by editing the "By Clock Domain" view |
+| I/O nodes activity          | Low        | More than 75% of inputs are missing user specification | Provide missing input activity with simulation results or by editing the "By Resource Type -> I/Os" view           |
+| Internal nodes activity     | Medium     | User specified less than 25% of internal nodes         | Provide missing internal nodes activity with simulation results or by editing the "By Resource Type" views         |
+| Device models               | High       | Device models are Production                           |                                                                                                                    |
+|                             |            |                                                        |                                                                                                                    |
+| Overall confidence level    | Low        |                                                        |                                                                                                                    |
++-----------------------------+------------+--------------------------------------------------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+2. Settings
+-----------
+
+2.1 Environment
+---------------
+
++-----------------------+--------------------------+
+| Ambient Temp (C)      | 25.0                     |
+| ThetaJA (C/W)         | 5.0                      |
+| Airflow (LFM)         | 250                      |
+| Heat Sink             | medium (Medium Profile)  |
+| ThetaSA (C/W)         | 4.6                      |
+| Board Selection       | medium (10"x10")         |
+| # of Board Layers     | 12to15 (12 to 15 Layers) |
+| Board Temperature (C) | 25.0                     |
++-----------------------+--------------------------+
+
+
+2.2 Clock Constraints
+---------------------
+
++--------------------+-----------------------------------+-----------------+
+| Clock              | Domain                            | Constraint (ns) |
++--------------------+-----------------------------------+-----------------+
+| clk_out2_clk_wiz_0 | clk_wiz_0/inst/clk_out2_clk_wiz_0 |            40.0 |
+| clk_out3_clk_wiz_0 | clk_wiz_0/inst/clk_out3_clk_wiz_0 |            80.0 |
+| clkfbout_clk_wiz_0 | clk_wiz_0/inst/clkfbout_clk_wiz_0 |            10.0 |
++--------------------+-----------------------------------+-----------------+
+
+
+3. Detailed Reports
+-------------------
+
+3.1 By Hierarchy
+----------------
+
++-----------------------------------------------------------------------+-----------+
+| Name                                                                  | Power (W) |
++-----------------------------------------------------------------------+-----------+
+| ov7670_vga                                                            |     0.172 |
+|   Coordinate_calculate                                                |     0.102 |
+|     Divider_32_32_1                                                   |     0.025 |
+|       U0                                                              |     0.025 |
+|         i_synth                                                       |     0.025 |
+|           i_nonzero_fract.i_synth                                     |     0.025 |
+|             i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider           |     0.025 |
+|               i_sdivider.divider_blk                                  |     0.025 |
+|                 div_loop[0].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[0].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[0].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[10].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[10].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[10].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[10].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[11].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[11].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[11].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[11].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[12].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[12].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[12].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[12].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[13].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[13].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[13].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[13].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[14].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[14].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[14].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[14].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[15].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[15].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[15].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[15].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[16].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[16].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[16].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[16].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[17].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[17].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[17].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[17].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[18].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[18].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[18].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[18].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[19].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[19].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[19].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[19].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[1].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[1].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[1].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[1].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[20].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[20].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[20].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[20].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[21].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[21].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[21].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[21].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[22].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[22].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[22].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[22].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[23].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[23].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[23].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[23].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[24].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[24].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[24].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[24].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[25].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[25].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[25].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[25].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[26].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[26].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[26].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[26].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[27].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[27].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[27].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[27].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[28].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[28].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[28].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[28].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[29].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[29].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[29].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[29].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[2].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[2].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[2].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[2].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[30].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[30].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[30].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[30].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[31].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[31].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[31].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[31].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[3].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[3].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[3].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[3].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[4].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[4].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[4].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[4].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[5].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[5].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[5].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[5].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[6].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[6].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[6].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[6].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[7].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[7].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[7].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[7].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[8].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[8].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[8].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[8].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[9].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[9].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[9].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[9].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 reg_quot_out.reg_quot                                 |    <0.001 |
+|     Divider_32_32_2                                                   |     0.025 |
+|       U0                                                              |     0.025 |
+|         i_synth                                                       |     0.025 |
+|           i_nonzero_fract.i_synth                                     |     0.025 |
+|             i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider           |     0.025 |
+|               i_sdivider.divider_blk                                  |     0.025 |
+|                 div_loop[0].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[0].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[0].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[10].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[10].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[10].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[10].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[11].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[11].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[11].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[11].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[12].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[12].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[12].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[12].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[13].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[13].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[13].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[13].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[14].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[14].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[14].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[14].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[15].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[15].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[15].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[15].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[16].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[16].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[16].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[16].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[17].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[17].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[17].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[17].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[18].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[18].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[18].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[18].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[19].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[19].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[19].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[19].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[1].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[1].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[1].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[1].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[20].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[20].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[20].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[20].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[21].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[21].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[21].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[21].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[22].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[22].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[22].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[22].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[23].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[23].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[23].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[23].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[24].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[24].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[24].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[24].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[25].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[25].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[25].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[25].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[26].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[26].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[26].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[26].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[27].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[27].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[27].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[27].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[28].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[28].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[28].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[28].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[29].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[29].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[29].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[29].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[2].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[2].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[2].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[2].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[30].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[30].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[30].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[30].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[31].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[31].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[31].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[31].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[3].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[3].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[3].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[3].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[4].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[4].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[4].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[4].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[5].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[5].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[5].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[5].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[6].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[6].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[6].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[6].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[7].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[7].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[7].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[7].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[8].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[8].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[8].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[8].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[9].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[9].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[9].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[9].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 reg_quot_out.reg_quot                                 |    <0.001 |
+|     Divider_32_32_3                                                   |     0.025 |
+|       U0                                                              |     0.025 |
+|         i_synth                                                       |     0.025 |
+|           i_nonzero_fract.i_synth                                     |     0.025 |
+|             i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider           |     0.025 |
+|               i_sdivider.divider_blk                                  |     0.025 |
+|                 div_loop[0].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[0].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[0].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[10].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[10].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[10].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[10].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[11].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[11].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[11].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[11].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[12].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[12].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[12].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[12].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[13].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[13].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[13].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[13].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[14].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[14].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[14].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[14].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[15].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[15].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[15].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[15].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[16].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[16].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[16].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[16].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[17].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[17].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[17].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[17].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[18].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[18].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[18].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[18].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[19].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[19].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[19].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[19].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[1].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[1].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[1].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[1].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[20].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[20].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[20].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[20].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[21].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[21].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[21].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[21].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[22].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[22].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[22].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[22].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[23].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[23].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[23].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[23].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[24].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[24].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[24].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[24].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[25].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[25].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[25].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[25].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[26].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[26].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[26].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[26].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[27].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[27].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[27].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[27].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[28].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[28].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[28].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[28].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[29].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[29].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[29].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[29].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[2].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[2].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[2].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[2].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[30].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[30].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[30].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[30].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[31].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[31].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[31].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[31].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[3].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[3].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[3].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[3].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[4].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[4].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[4].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[4].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[5].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[5].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[5].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[5].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[6].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[6].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[6].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[6].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[7].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[7].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[7].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[7].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[8].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[8].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[8].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[8].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[9].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[9].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[9].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[9].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 reg_quot_out.reg_quot                                 |    <0.001 |
+|     Divider_32_32_4                                                   |     0.025 |
+|       U0                                                              |     0.025 |
+|         i_synth                                                       |     0.025 |
+|           i_nonzero_fract.i_synth                                     |     0.025 |
+|             i_algo_r2_or_lutmult.i_nonzero_fract.i_sdivider           |     0.025 |
+|               i_sdivider.divider_blk                                  |     0.025 |
+|                 div_loop[0].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[0].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[0].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[10].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[10].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[10].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[10].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[11].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[11].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[11].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[11].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[12].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[12].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[12].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[12].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[13].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[13].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[13].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[13].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[14].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[14].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[14].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[14].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[15].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[15].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[15].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[15].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[16].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[16].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[16].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[16].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[17].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[17].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[17].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[17].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[18].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[18].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[18].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[18].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[19].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[19].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[19].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[19].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[1].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[1].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[1].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[1].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[20].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[20].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[20].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[20].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[21].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[21].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[21].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[21].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[22].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[22].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[22].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[22].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[23].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[23].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[23].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[23].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[24].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[24].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[24].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[24].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[25].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[25].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[25].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[25].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[26].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[26].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[26].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[26].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[27].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[27].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[27].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[27].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[28].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[28].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[28].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[28].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[29].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[29].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[29].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[29].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[2].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[2].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[2].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[2].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[30].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[30].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[30].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[30].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[31].adder_gen.reg_req.adsu_mod               |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[31].divisor_gen.divisor_dc1.del_divisor_msbs |    <0.001 |
+|                 div_loop[31].num_stages.numerator_gen.del_numer       |    <0.001 |
+|                 div_loop[31].quot_gen.quot_reg.i_div1.quot_out        |    <0.001 |
+|                 div_loop[3].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[3].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[3].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[3].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[4].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[4].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[4].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[4].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[5].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[5].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[5].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[5].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[6].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[6].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[6].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[6].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[7].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[7].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[7].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[7].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[8].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[8].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[8].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[8].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 div_loop[9].adder_gen.reg_req.adsu_mod                |    <0.001 |
+|                   add1                                                |    <0.001 |
+|                     no_pipelining.the_addsub                          |    <0.001 |
+|                       i_q_simple.qreg                                 |    <0.001 |
+|                 div_loop[9].divisor_gen.divisor_dc1.del_divisor_msbs  |    <0.001 |
+|                 div_loop[9].num_stages.numerator_gen.del_numer        |    <0.001 |
+|                 div_loop[9].quot_gen.quot_reg.i_div1.quot_out         |    <0.001 |
+|                 reg_quot_out.reg_quot                                 |    <0.001 |
+|   DATA_processing                                                     |     0.005 |
+|     your_instance_name                                                |     0.004 |
+|       U0                                                              |     0.004 |
+|         inst_blk_mem_gen                                              |     0.004 |
+|           gnativebmg.native_blk_mem_gen                               |     0.004 |
+|             valid.cstr                                                |     0.004 |
+|               has_mux_b.B                                             |    <0.001 |
+|               ramloop[10].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[11].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[12].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[13].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[14].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[15].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[16].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[17].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[18].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[19].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[20].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[21].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[22].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[23].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[24].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[25].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[26].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[27].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[28].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[29].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[30].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[31].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[32].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[33].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[34].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[35].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[36].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[37].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[38].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[39].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[3].ram.r                                        |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[40].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[41].ram.r                                       |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[4].ram.r                                        |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[5].ram.r                                        |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[6].ram.r                                        |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[7].ram.r                                        |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[8].ram.r                                        |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|               ramloop[9].ram.r                                        |    <0.001 |
+|                 prim_noinit.ram                                       |    <0.001 |
+|   I_CFG_OV7670                                                        |    <0.001 |
+|     I_CFG_REG                                                         |    <0.001 |
+|     I_SCCB_sender                                                     |    <0.001 |
+|   Moter_X                                                             |    <0.001 |
+|   Motor_Y                                                             |    <0.001 |
+|   Motor_position_detect_1                                             |     0.000 |
+|   VGA                                                                 |    <0.001 |
+|   clk_wiz_0                                                           |     0.056 |
+|     inst                                                              |     0.056 |
++-----------------------------------------------------------------------+-----------+
+
+

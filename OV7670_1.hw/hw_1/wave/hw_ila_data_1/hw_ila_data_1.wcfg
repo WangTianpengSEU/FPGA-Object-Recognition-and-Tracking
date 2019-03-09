@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="H:/UserFiles/Desktop/aaa/OV7670_ok2/OV7670_1/OV7670_1/OV7670_1.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="14" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject db_ref_id="1" fp_name="Camera_data_out" type="array">
+      <obj_property name="ElementShortName">Camera_data_out[15:0]</obj_property>
+      <obj_property name="ObjectShortName">Camera_data_out[15:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="HS_flag_w" type="logic">
+      <obj_property name="ElementShortName">HS_flag_w</obj_property>
+      <obj_property name="ObjectShortName">HS_flag_w</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Target_num_estimate_w" type="array">
+      <obj_property name="ElementShortName">Target_num_estimate_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Target_num_estimate_w[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Target_num_w" type="array">
+      <obj_property name="ElementShortName">Target_num_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Target_num_w[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="VS_flag_change_w" type="logic">
+      <obj_property name="ElementShortName">VS_flag_change_w</obj_property>
+      <obj_property name="ObjectShortName">VS_flag_change_w</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="VS_flag_w" type="logic">
+      <obj_property name="ElementShortName">VS_flag_w</obj_property>
+      <obj_property name="ObjectShortName">VS_flag_w</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="X_coordinate_w" type="array">
+      <obj_property name="ElementShortName">X_coordinate_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">X_coordinate_w[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="X_count_w" type="array">
+      <obj_property name="ElementShortName">X_count_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">X_count_w[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="X_target_ave_estimate_w" type="array">
+      <obj_property name="ElementShortName">X_target_ave_estimate_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">X_target_ave_estimate_w[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Y_coordinate_w" type="array">
+      <obj_property name="ElementShortName">Y_coordinate_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Y_coordinate_w[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Y_count_w" type="array">
+      <obj_property name="ElementShortName">Y_count_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Y_count_w[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="Y_target_ave_estimate_w" type="array">
+      <obj_property name="ElementShortName">Y_target_ave_estimate_w[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Y_target_ave_estimate_w[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="camera_href_IBUF" type="logic">
+      <obj_property name="ElementShortName">camera_href_IBUF</obj_property>
+      <obj_property name="ObjectShortName">camera_href_IBUF</obj_property>
+   </wvobject>
+   <wvobject db_ref_id="1" fp_name="camera_vsync_IBUF" type="logic">
+      <obj_property name="ElementShortName">camera_vsync_IBUF</obj_property>
+      <obj_property name="ObjectShortName">camera_vsync_IBUF</obj_property>
+   </wvobject>
+</wave_config>

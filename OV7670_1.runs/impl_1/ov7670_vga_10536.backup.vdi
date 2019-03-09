@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Sat Aug 25 12:38:10 2018
+# Process ID: 9516
+# Log file: H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/impl_1/ov7670_vga.vdi
+# Journal file: H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source ov7670_vga.tcl -notrace
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/clk_wiz_0_synth_1/clk_wiz_0.dcp' for cell 'clk_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/DIV_32_32_synth_1/DIV_32_32.dcp' for cell 'Coordinate_calculate/Divider_32_32_1'
+INFO: [Project 1-454] Reading design checkpoint 'H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/DIV_32_32_synth_1/DIV_32_32.dcp' for cell 'Coordinate_calculate/Divider_32_32_2'
+INFO: [Project 1-454] Reading design checkpoint 'H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/DIV_32_32_synth_1/DIV_32_32.dcp' for cell 'Coordinate_calculate/Divider_32_32_3'
+INFO: [Project 1-454] Reading design checkpoint 'H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/DIV_32_32_synth_1/DIV_32_32.dcp' for cell 'Coordinate_calculate/Divider_32_32_4'
+INFO: [Project 1-454] Reading design checkpoint 'H:/Desktop/OV7670_XY_GREEN_YELLOW_1/OV7670_XY_ok1/OV7670_1/OV7670_1.runs/blk_mem_gen_0_synth_1/blk_mem_gen_0.dcp' for cell 'DATA_processing/your_instance_name'
